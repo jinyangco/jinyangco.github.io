@@ -1,0 +1,44 @@
+/* 제품 소개 본문 */
+.product-intro-section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: left; /* ← 변경 */
+}
+
+.product-intro-section h2 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 100px;
+  text-align: center; /* ← 추가 */
+}
+
+.product-intro-layout {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.intro-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.intro-description p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: left; /* ← 추가 */
+}
+
+
+/* 이미지 */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

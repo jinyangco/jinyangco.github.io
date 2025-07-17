@@ -1,0 +1,65 @@
+
+body {
+  font-family: 'Pretendard', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.benefit-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefit-section h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 100px;
+}
+
+.benefit-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  aspect-ratio: 96 / 102;
+  margin: 0 auto;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.benefit-item {
+  position: absolute;
+  width: 18%;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #222;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.benefit-item small {
+  display: block;
+  font-weight: normal;
+  color: #444;
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+/* 좌표는 백분율 기준 (960x1020 기준) */
+.benefit-item.top          { top: 5%; left: 63%; } /* 강력한 흡입력 */
+.benefit-item.top-right    { top: 28%; left: 95%; } /* 조용한 청소 */
+.benefit-item.right        { top: 52%; left: 95%; } /* 경제성 */
+.benefit-item.bottom-right { top: 80%; left: 65%; } /* 간단하고 편리한 청소 */
+.benefit-item.bottom       { top: 80%; left: 37%; } /* 깨끗하고 쾌적한 실내유지 */
+.benefit-item.bottom-left  { top: 52%; left: 5%; } /* 다양한 청소도구배치 */
+.benefit-item.left         { top: 28%; left: 5%; } /* 각종 안전장치 */
+.benefit-item.top-left     { top: 5%; left: 37%; } /* 무선 원격조정 */
+
+

@@ -1,0 +1,322 @@
+/* 히어로 */
+.hero {
+  position:relative;
+  height:550px;
+  overflow:hidden;
+}
+
+.hero img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(50%);
+}
+
+.hero-text {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  color:white;
+}
+
+.hero-text h1 {
+  font-size:3rem;
+  margin:0px;
+}
+
+.hero-text p {
+  font-size:1.2rem;
+  margin-top:0.5rem;
+}
+
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 650px;
+}
+
+.hero-slider .slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.hero-slider .slide img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.hero-slider .slide .hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* 왼쪽에 붙이기 */
+  transform: translateY(-50%); /* X축 이동은 제거 */
+  color: white;
+  text-align: left; /* 왼쪽 정렬 */
+}
+
+.hero-slider .hero-text h1 {
+  font-size: 3rem;
+    font-size: 3rem; /* 기존 유지 */
+  font-weight: bold;
+  line-height: 1.2; /* ⬅️ 여기 줄 간격 줄이기 */
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-slider .slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.hero-slider .hero-text p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/*dots*/
+.hero-slider .dots {
+  position: absolute;
+  bottom: 30px; /* 조금 더 위로 */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10; /* 슬라이드 이미지 위에 무조건 표시 */
+}
+
+.hero-slider .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ffffffa4;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero-slider .dot.active {
+  background: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-slider .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-slider .herzzo-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-slider .hero-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+  .step img {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .step-text {
+    padding: 20px;
+  }
+
+  .hero-slider {
+    height: 500px;
+  }
+  .hero-slider .slide img {
+    height: 500px;
+  }
+
+  .hero-slider .hero-text h1 {
+    font-size: 2rem;
+  }
+  .hero-slider .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 400px;
+  }
+  .hero-slider .slide img {
+    height: 400px;
+  }
+
+  .hero-slider .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-slider .hero-text p {
+    font-size: 0.9rem;
+  }
+}
+
+/* section -> 가독성 개선 */
+.section {
+  max-width:1200px;
+  margin:80px auto;
+  padding:0 40px;
+}
+
+.section .text-block {
+  text-align:left;
+  margin-bottom:50px;
+  padding-left:10px;
+}
+
+.section h2 {
+  display: flex;
+  align-items: center;
+  font-size: 1.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.section h2::after {
+  content: "";
+  flex-grow: 1;
+  height: 3px; /* 조금 굵게 */
+  background: #2f2f2f; /* 주황색 */
+  margin-left: 12px;
+}
+
+.section p.lead {
+  color:#666;
+  margin-top:0.5rem;
+}
+
+.cards {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:40px;
+}
+
+.card {
+  flex:1 1 28%;
+  max-width:300px;
+  min-width:240px;
+  text-align:left;
+}
+
+.card img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:4px;
+  margin-bottom:10px;
+}
+
+.card h3 {
+  margin:0.8rem 0 0.4rem;
+  font-size:1rem;
+  font-weight:600;
+  padding-left:4px;
+}
+
+.card p {
+  font-size:0.85rem;
+  color:#555;
+  padding-left:4px;
+}
+
+@media (max-width: 480px) {
+  .hero-slider {
+    height: 400px;
+  }
+  .hero-slider .slide img {
+    height: 400px;
+  }
+
+  .hero-slider .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-slider .hero-text p {
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* 제품 사용설명 */
+.steps-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+.steps-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.steps-section .lead {
+  text-align: center;
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+.step {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+.step img {
+  width: 280px;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.step-text {
+  padding: 30px;
+}
+.step-text h3 {
+  font-size: 1.4rem;
+  color: #859FB1;
+  margin-bottom: 15px;
+}
+.step-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+@media (max-width: 768px) {
+  .step {
+    flex-direction: column;
+    text-align: center;
+  }
+  .step img {
+    width: 200px;
+    margin-top: 20px;
+  }
+  .step-text {
+    padding: 20px;
+  }
+}
