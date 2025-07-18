@@ -254,7 +254,7 @@
 }
 
 .card p {
-   margin: 0.1rem 0 1.0rem; /* 하단 여백도 살짝 줄이기 */
+   margin: -0.1rem 0 1.0rem; /* 하단 여백도 살짝 줄이기 */
   font-size:0.85rem;
   color:#555;
   padding-left:4px;
