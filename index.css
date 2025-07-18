@@ -99,7 +99,7 @@
   border-radius: 50%;
   background: #ffffffa4;
   cursor: pointer;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 
 .hero-slider .dot.active {
@@ -248,12 +248,13 @@
 
 .card h3 {
   margin:0.8rem 0 0.4rem;
-  font-size:1rem;
+  font-size:1.3rem;
   font-weight:600;
   padding-left:4px;
 }
 
 .card p {
+   margin: 0.1rem 0 1.0rem; /* 하단 여백도 살짝 줄이기 */
   font-size:0.85rem;
   color:#555;
   padding-left:4px;
