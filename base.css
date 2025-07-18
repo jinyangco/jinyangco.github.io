@@ -114,20 +114,15 @@ footer .info p {
 }
 
 /* 반응형 - 모바일 대응 */
+/* 반응형 - 모바일 대응 */
 @media (max-width: 768px) {
   header {
-   /*  flex-direction: column; */
-   flex-direction: row; /* ✅ 로고 + 메뉴 가로 정렬 유지 */
+    flex-direction: row; /* ✅ 로고 + 메뉴 가로 정렬 유지 */
     align-items: center;
     padding: 10px 20px;
   }
 
-  .nav-links {
-    /*flex-direction: column;*/
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-  }
+  /* ⛔ nav-links 관련 처리는 mobile.css에 있으므로 제거 */
 
   footer {
     flex-direction: column;
@@ -150,3 +145,4 @@ footer .info p {
     max-width: 100px;
   }
 }
+

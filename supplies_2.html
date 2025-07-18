@@ -5,28 +5,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>소모품 안내 - 배관자재</title>
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="base_product.css">
-    <link rel="stylesheet" href="supplies_1.css">
+      <link rel="stylesheet" href="base.css" />
+      <link rel="stylesheet" href="base_product.css" />
+      <link rel="stylesheet" href="mobile.css" />
+      <link rel="stylesheet" href="supplies_2.css" />
 </head>
 <body>
 
-<!--메뉴-->
+<!-- ✅ 헤더 -->
 <header>
   <div class="logo">
     <a href="index.html"><img src="images/color_logo.svg" alt="JINYANGTECH"></a>
   </div>
+
+  <!-- ✅ 메뉴 열기용 햄버거 버튼 -->
+  <div class="hamburger open-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- ✅ PC용 메뉴 -->
   <ul class="nav-links">
     <li><a href="#">중앙집중식 청소기</a>
       <ul>
-        <li><a href="product-intro_1.html">제품소개</a></li>
-        <li><a href="product-types.html">제품종류 및 사양</a></li>
+        <li><a href="product-intro_1.html">- 제품소개</a></li>
+        <li><a href="product-types.html">- 제품구성</a></li>
       </ul>
     </li>
     <li><a href="supplies_1.html">소모품</a></li>
     <li><a href="company.html">회사소개</a></li>
   </ul>
 </header>
+
+<!-- ✅ 모바일 메뉴 -->
+<div class="mobile-menu">
+  <!-- ✅ 메뉴 닫기용 햄버거 버튼 -->
+  <div class="hamburger close-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="mobile-nav">
+    <li>
+      <button class="dropdown-btn">중앙집중식 청소기</button>
+      <ul class="dropdown-content">
+        <li><a href="product-intro_1.html">- 제품소개</a></li>
+        <li><a href="product-types.html">- 제품구성</a></li>
+      </ul>
+    </li>
+    <li><a href="supplies_1.html">소모품</a></li>
+    <li><a href="company.html">회사소개</a></li>
+  </ul>
+</div>
+
 
 <!-- 파란제목 -->
   <section class="blue-title">
@@ -139,3 +172,7 @@
         <p>이메일: kdgk331@hanmail.net | FAX: 054-977-1622 | </p>
       </div>
     </footer>
+
+    <script src="mobile.js"></script>
+  </body>
+</html>

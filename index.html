@@ -6,26 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no">
   <title>진양테크</title>
-  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="mobile.css" />
 </head>
 <body>
 
+<!-- ✅ 헤더 -->
 <header>
   <div class="logo">
     <a href="index.html"><img src="images/color_logo.svg" alt="JINYANGTECH"></a>
   </div>
-  <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+
+  <!-- ✅ 메뉴 열기용 햄버거 버튼 -->
+  <div class="hamburger open-hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
+
+  <!-- ✅ PC용 메뉴 -->
   <ul class="nav-links">
     <li><a href="#">중앙집중식 청소기</a>
       <ul>
-        <li><a href="product-intro_1.html">제품소개</a></li>
-        <li><a href="product-types.html">제품구성</a></li>
+        <li><a href="product-intro_1.html">- 제품소개</a></li>
+        <li><a href="product-types.html">- 제품구성</a></li>
       </ul>
     </li>
     <li><a href="supplies_1.html">소모품</a></li>
@@ -33,6 +38,29 @@
   </ul>
 </header>
 
+<!-- ✅ 모바일 메뉴 -->
+<div class="mobile-menu">
+  <!-- ✅ 메뉴 닫기용 햄버거 버튼 -->
+  <div class="hamburger close-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="mobile-nav">
+    <li>
+      <button class="dropdown-btn">중앙집중식 청소기</button>
+      <ul class="dropdown-content">
+        <li><a href="product-intro_1.html">- 제품소개</a></li>
+        <li><a href="product-types.html">- 제품구성</a></li>
+      </ul>
+    </li>
+    <li><a href="supplies_1.html">소모품</a></li>
+    <li><a href="company.html">회사소개</a></li>
+  </ul>
+</div>
+
+<!-- ✅ 메인 슬라이더 -->
 <section class="hero-slider">
   <div class="slides">
     <div class="slide">
@@ -64,6 +92,7 @@
   </div>
 </section>
 
+<!-- ✅ 장점 소개 섹션 -->
 <section class="section">
   <h2 class="fade-in">조용히, 강력히, 완벽히.</h2>
   <p class="lead fade-in">눈에 보이지 않아도 청소 결과는 확실합니다.</p>
@@ -85,16 +114,19 @@
     </div>
   </div>
 </section>
-    <footer>
-      <img src="images/black_logo.svg" alt="JINYANGTECH 로고">
-      <div class="info">
-        <p>회사명 : 진양테크 | 주소 : 경북 칠곡군 기산면 영리1길 14</p>
-        <p>PHNOE : 010 - 2528 - 1625 | TEL : 054 - 977 - 1624</p>
-        <p>이메일: kdgk331@hanmail.net | FAX: 054-977-1622 | </p>
-      </div>
-    </footer>
 
+<!-- ✅ 푸터 -->
+<footer>
+  <img src="images/black_logo.svg" alt="JINYANGTECH 로고">
+  <div class="info">
+    <p>회사명 : 진양테크 | 주소 : 경북 칠곡군 기산면 영리1길 14</p>
+    <p>PHONE : 010 - 2528 - 1625 | TEL : 054 - 977 - 1624</p>
+    <p>이메일: kdgk331@hanmail.net | FAX: 054-977-1622</p>
+  </div>
+</footer>
+
+<!-- ✅ 스크립트 -->
 <script src="index.js"></script>
-
+<script src="mobile.js"></script>
 </body>
 </html>
