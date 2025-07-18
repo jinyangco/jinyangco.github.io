@@ -24,7 +24,7 @@ a[href^="mailto"] {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #333; /* 원하는 색상으로 변경 가능 */
+  background-color: #333;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
@@ -43,7 +43,7 @@ a[href^="mailto"] {
   right: -280px;
   width: 250px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(10px);
   box-shadow: -8px 0 20px rgba(0, 0, 0, 0.15);
   z-index: 1000;
@@ -117,11 +117,18 @@ a[href^="mailto"] {
   transition: all 0.3s ease;
 }
 
-/* 🔵 Hover 시 효과 - 배경 파랑, 글씨 흰색 */
+/* 🔵 Hover 시 효과 */
 .dropdown-content li a:hover,
 .mobile-nav a:hover,
 .mobile-nav .dropdown-btn:hover {
-  background-color: #007BFF;
+  color: #000;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+/* 드롭다운 항목 hover 시 배경 파랑 + 글씨 흰색 */
+.dropdown-content li a:hover {
+  background-color: #859FB1;
   color: #fff;
   font-weight: bold;
 }
