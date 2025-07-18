@@ -1,6 +1,5 @@
 
-/* 모바일 햄버거 메뉴 및 전화번호 스타일 */
-
+/* 전화번호 자동링크 방지 */
 a[href^="tel"],
 a[href^="sms"],
 a[href^="mailto"] {
@@ -10,51 +9,137 @@ a[href^="mailto"] {
   cursor: default;
 }
 
+/* 햄버거 버튼 */
 .hamburger {
   display: none;
   flex-direction: column;
+  gap: 5px;
   cursor: pointer;
-  gap: 4px;
 }
 
 .hamburger span {
   display: block;
   width: 25px;
   height: 3px;
-  background: #333;
+  background-color: #333;
   border-radius: 2px;
 }
 
-@media (max-width: 768px) {
+/* 모바일 메뉴 */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 60px 20px;
+  transition: right 0.3s ease;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav > li {
+  margin-bottom: 15px;
+}
+
+.mobile-nav a,
+.mobile-nav .dropdown-btn {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  text-align: left;
+  width: 100%;
+}
+
+.mobile-nav .dropdown-btn.active,
+.mobile-nav a:hover {
+  color: #0066cc;
+}
+
+.dropdown-content {
+  display: none;
+  padding-left: 15px;
+}
+
+.dropdown-content li {
+  margin: 8px 0;
+}
+
+/* 데스크탑에서는 숨기기 */
+@media (min-width: 769px) {
   .hamburger {
-    display: flex;
+    display: none !important;
   }
 
   .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: #fff;
-    padding: 10px 0;
-    position: absolute;
-    top: 70px;
-    left: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 999;
+    display: flex !important;
+    position: static !important;
+    flex-direction: row !important;
+    box-shadow: none !important;
   }
 
   .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links li ul {
+    position: absolute;
+    display: none;
+  }
+
+  .nav-links li:hover ul {
     display: flex;
   }
+}
 
-  header {
-    flex-direction: row;
-    justify-content: space-between;
+/* 모바일에서는 드롭다운 숨기기 (기본값) */
+@media (max-width: 768px) {
+  .nav-links li ul {
+    display: none;
   }
 
-  .nav-links li a {
-    font-size: 1rem;
-    white-space: nowrap;
+  .nav-links li:hover ul {
+    display: none;
+  }
+
+  .nav-links.active li ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  footer .info {
+    display: block;
+    max-width: 100%;
+    padding: 10px 0;
+  }
+
+  footer .info p {
+    white-space: normal;     /* 자동 줄바꿈 허용 */
+    word-break: keep-all;    /* 단어 기준 줄바꿈 */
+    line-height: 1.5;
+    font-size: 0.9rem;
   }
 }

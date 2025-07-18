@@ -116,13 +116,15 @@ footer .info p {
 /* 반응형 - 모바일 대응 */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
+   /*  flex-direction: column; */
+   flex-direction: row; /* ✅ 로고 + 메뉴 가로 정렬 유지 */
     align-items: center;
     padding: 10px 20px;
   }
 
   .nav-links {
-    flex-direction: column;
+    /*flex-direction: column;*/
+    flex-direction: row;
     align-items: center;
     gap: 12px;
   }

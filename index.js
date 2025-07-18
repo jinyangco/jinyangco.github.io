@@ -42,6 +42,7 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
       if (isMobile && entry.target.classList.contains('card')) {
+        // 모바일: 카드 순차 등장
         setTimeout(() => {
           entry.target.classList.add('show');
         }, index * 150);
@@ -51,8 +52,41 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.4,
-  rootMargin: '0px 0px -150px 0px' // ⬅️ 스크롤 더 내려야 등장함
+  threshold: 0.2
 });
 
 [...cards, ...fadeElements].forEach(el => observer.observe(el));
+
+// 슬라이드 터치 이벤트
+const slider = document.querySelector('.slides');
+let startX = 0;
+let endX = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  startX = e.touches[0].clientX;
+}, false);
+
+slider.addEventListener('touchend', (e) => {
+  endX = e.changedTouches[0].clientX;
+  handleSwipe();
+}, false);
+
+function handleSwipe() {
+  const deltaX = endX - startX;
+
+  if (Math.abs(deltaX) > 50) { // 최소 스와이프 거리 설정
+    if (deltaX > 0) {
+      // 왼쪽에서 오른쪽으로 스와이프 → 이전 슬라이드
+      let prevIndex = (currentIndex - 1 + slideCount) % slideCount;
+      goToSlide(prevIndex);
+    } else {
+      // 오른쪽에서 왼쪽으로 스와이프 → 다음 슬라이드
+      let nextIndex = (currentIndex + 1) % slideCount;
+      goToSlide(nextIndex);
+    }
+
+    // 자동 재생 리셋
+    clearInterval(interval);
+    interval = setInterval(nextSlide, 4000);
+  }
+}
