@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -9,7 +8,7 @@
   <link rel="stylesheet" href="base.css" />
   <link rel="stylesheet" href="index.css" />
   <link rel="stylesheet" href="mobile.css" />
-</head><search></search>
+</head>
 <body>
 
 <!-- ✅ 헤더 -->
@@ -22,32 +21,38 @@
     <span></span>
     <span></span>
   </div>
-  <ul class="nav-links">
-    <li>
-      <a href="#">중앙집중식 청소기</a>
-      <ul>
-        <li>
-          <a href="product-intro_1.html">제품소개</a>
-          <ul>
-            <li><a href="product-intro_1.html">중앙집중식 청소기</a></li>
-            <li><a href="product-intro_2.html">제품 구성도</a></li>
-            <li><a href="product-intro_3.html">제품 장점</a></li>
-            <li><a href="product-intro_4.html">제품 사용방법</a></li>
-          </ul>
-        </li>
-        <li><a href="product-types.html">제품종류</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#">소모품</a>
-      <ul>
-        <li><a href="supplies_1.html">TOOL SET(악세서리)</a></li>
-        <li><a href="supplies_2.html">배관자재</a></li>
-      </ul>
-    </li>
-    <li><a href="company.html">회사소개</a></li>
-  </ul>
+
+  <!--상단 pc메뉴-->
+<ul class="nav-links">
+  <li>
+    <a href="#">중앙집중식 청소기</a>
+    <ul class="dropdown">
+      <li>
+        <a href="#" class="has-sub">- 제품소개</a>
+        <ul class="sub-dropdown">
+          <li><a href="product-intro_1.html">중앙집중식 청소기</a></li>
+          <li><a href="product-intro_2.html">제품 구성도</a></li>
+          <li><a href="product-intro_3.html">제품 장점</a></li>
+          <li><a href="product-intro_4.html">제품 사용방법</a></li>
+        </ul>
+      </li>
+      <li><a href="product-types.html">- 제품 종류 및 사양</a></li>
+    </ul>
+  </li>
+
+  <li>
+    <a href="#">소모품</a>
+    <ul class="dropdown">
+      <li><a href="supplies_1.html">- TOOL SET(악세서리)</a></li>
+      <li><a href="supplies_2.html">- 배관자재</a></li>
+    </ul>
+  </li>
+
+  <li><a href="company.html">회사소개</a></li>
+</ul>
+
 </header>
+
 
 <!-- ✅ 모바일 메뉴 -->
 <div class="mobile-menu">
@@ -62,7 +67,7 @@
       <button class="dropdown-btn">중앙집중식 청소기</button>
       <ul class="dropdown-content">
         <li>
-          <button class="sub-dropdown-btn">제품소개</button>
+          <button class="sub-dropdown-btn">- 제품소개</button>
           <ul class="sub-dropdown-content">
             <li><a href="product-intro_1.html">중앙집중식 청소기</a></li>
             <li><a href="product-intro_2.html">제품 구성도</a></li>
@@ -70,15 +75,15 @@
             <li><a href="product-intro_4.html">제품 사용방법</a></li>
           </ul>
         </li>
-        <li><a href="product-types.html">제품종류</a></li>
+        <li><a href="product-types.html">- 제품 종류 및 사양</a></li>
       </ul>
     </li>
 
     <li>
       <button class="dropdown-btn">소모품</button>
       <ul class="dropdown-content">
-        <li><a href="supplies_1.html">TOOL SET(악세서리)</a></li>
-        <li><a href="supplies_2.html">배관자재</a></li>
+        <li><a href="supplies_1.html">- TOOL SET(악세서리)</a></li>
+        <li><a href="supplies_2.html">- 배관자재</a></li>
       </ul>
     </li>
 
