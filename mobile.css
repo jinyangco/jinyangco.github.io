@@ -1,3 +1,4 @@
+
 /* 📵 전화번호 자동링크 방지 */
 a[href^="tel"],
 a[href^="sms"],
@@ -8,7 +9,7 @@ a[href^="mailto"] {
   cursor: default;
 }
 
-/* 🍔 햄버거 버튼 (공통) */
+/* 🍔 햄버거 버튼 */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -69,7 +70,8 @@ a[href^="mailto"] {
 
 /* 🌐 메뉴 링크 */
 .mobile-nav a,
-.mobile-nav .dropdown-btn {
+.mobile-nav .dropdown-btn,
+.mobile-nav .sub-dropdown-btn {
   display: block;
   text-decoration: none;
   color: #333;
@@ -82,71 +84,71 @@ a[href^="mailto"] {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
   transition: color 0.2s ease;
+  cursor: pointer;
 }
 
-/* 🔽 드롭다운 전체 영역 */
-.dropdown-content {
+/* 🔽 드롭다운 */
+.dropdown-content,
+.sub-dropdown-content {
   list-style: none;
-  padding-left: 15px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease;
+  padding-left: 15px;
 }
 
-/* 드롭다운 확장 시 */
-.dropdown-btn.active + .dropdown-content {
+.dropdown-btn.active + .dropdown-content,
+.sub-dropdown-btn.active + .sub-dropdown-content {
   max-height: 300px;
 }
 
-/* 드롭다운 항목 기본 스타일 */
-.dropdown-content li {
+/* 링크 항목 */
+.dropdown-content li,
+.sub-dropdown-content li {
   list-style: none;
   margin: 6px 0;
   font-size: 0.95rem;
-  font-weight: 400;
   color: #444;
-  position: relative;
   padding-left: 0;
 }
 
-.dropdown-content li a {
+.dropdown-content li a,
+.sub-dropdown-content li a {
   display: block;
   text-decoration: none;
   color: #444;
-  padding: 6px 0;
+  padding: 6px 0 6px 16px;
   transition: all 0.3s ease;
 }
 
-/* 🔵 Hover 시 효과 */
-.dropdown-content li a:hover,
+/* 🔵 Hover 효과 */
 .mobile-nav a:hover,
-.mobile-nav .dropdown-btn:hover {
+.dropdown-btn:hover,
+.sub-dropdown-btn:hover,
+.dropdown-content li a:hover,
+.sub-dropdown-content li a:hover {
   color: #000;
   font-weight: bold;
   background-color: transparent;
 }
 
-/* 드롭다운 항목 hover 시 배경 파랑 + 글씨 흰색 */
-.dropdown-content li a:hover {
+.dropdown-content li a:hover,
+.sub-dropdown-content li a:hover {
   background-color: #859FB1;
   color: #fff;
-  font-weight: bold;
 }
 
-/* ✅ 클릭한 메뉴 항목은 active 클래스 유지 */
+/* ✅ active 표시 */
 .mobile-nav a.active,
-.mobile-nav .dropdown-btn.active,
-.dropdown-content li a.active {
+.dropdown-btn.active,
+.sub-dropdown-btn.active,
+.dropdown-content li a.active,
+.sub-dropdown-content li a.active {
   color: #1a1a1a;
   font-weight: bold;
 }
 
-/* "-" 제거 */
-.dropdown-content li::before {
-  content: none;
-}
-
-/* 📱 모바일 전용 스타일 (768px 이하) */
+/* 📱 모바일 반응형 */
 @media (max-width: 768px) {
   .nav-links {
     display: none !important;
@@ -162,14 +164,6 @@ a[href^="mailto"] {
 
   .mobile-menu.active {
     display: block;
-  }
-
-  .nav-links li ul {
-    display: none;
-  }
-
-  .nav-links li:hover ul {
-    display: none;
   }
 
   footer {
