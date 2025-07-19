@@ -73,14 +73,30 @@ margin-bottom: 70px;
 
 @media (max-width: 768px) {
   .step {
-    flex-direction: column;
-    text-align: center;
-  }
-  .step img {
-    width: 200px;
-    margin-top: 20px;
-  }
-  .step-text {
+    flex-direction: row; /* ✅ 모바일에서도 row 유지 */
+    align-items: flex-start;
+    text-align: left;
+    gap: 16px;
     padding: 20px;
   }
+
+  .step img {
+    width: 100px;         /* ✅ 이미지 너비 줄이기 */
+    height: auto;
+  }
+
+  .step-text {
+    padding: 0;
+    flex: 1;
+  }
+
+  .step-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .step-text p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
 }
+

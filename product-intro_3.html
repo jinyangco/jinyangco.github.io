@@ -75,21 +75,24 @@
       <a href="product-intro_4.html" >제품 사용방법</a>
     </nav>
 
-    <!-- 본문 -->
-  <section class="benefit-section">
-        <h2 class="sub-title">중앙집중식 청소기, 선택의 이유</h2>
-      <div class="benefit-container">
-        <img src="images/good_2.svg" alt="중앙 청소기 본체" class="digram-image">
-        <div class="benefit-item top">강력한 흡입력<br><small>강력한 흡입력으로<br>미세먼지, 세균 제거</small></div>
-        <div class="benefit-item top-right">조용한 청소<br><small>저소음 설계로 청소<br>중에도 조용함 유지</small></div>
-        <div class="benefit-item right">경제성<br><small>연 1~2회 집진통<br>비우는 간편함</small></div>
-        <div class="benefit-item bottom-right">간단하고<br>편리한 청소<br><small>호스만 연결해<br>손쉽게 청소</small></div>
-        <div class="benefit-item bottom">깨끗하고 쾌적한<br>실내유지<br><small>먼지, 악취를 실외로 배출,<br>실내 항상 쾌적</small></div>
-        <div class="benefit-item bottom-left">다양한 청소도구<br><small>바닥, 가구, 틈새까지<br>다양한 툴 제공</small></div>
-        <div class="benefit-item left">각종 안전장치<br><small>자동 OFF,<br>과부하 방지 등</small></div>
-        <div class="benefit-item top-left">무선 원격조정<br><small>무선 리모컨으로<br>간편 작동</small></div>
-      </div>
-  </section>
+    <div class="benefit-container">
+      <!-- PC용 백그라운드 (기존 SVG) + 모바일용 교체 -->
+      <picture>
+        <source srcset="images/good_2_mobile.png" media="(max-width: 768px)" />
+        <img src="images/good_2.svg" alt="중앙 청소기 본체" class="background-image" />
+      </picture>
+
+      <!-- 점 설명 텍스트 -->
+      <div class="benefit-item top">강력한 흡입력<br><small>강력한 흡입력으로<br>미세먼지, 세균 제거</small></div>
+      <div class="benefit-item top-right">조용한 청소<br><small>저소음 설계로 청소<br>중에도 조용함 유지</small></div>
+      <div class="benefit-item right">경제성<br><small>연 1~2회 집진통<br>비우는 간편함</small></div>
+      <div class="benefit-item bottom-right">간단하고<br>편리한 청소<br><small>호스만 연결해<br>손쉽게 청소</small></div>
+      <div class="benefit-item bottom">깨끗하고 쾌적한<br>실내유지<br><small>먼지, 악취를 실외로 배출,<br>실내 항상 쾌적</small></div>
+      <div class="benefit-item bottom-left">다양한 청소도구<br><small>바닥, 가구, 틈새까지<br>다양한 툴 제공</small></div>
+      <div class="benefit-item left">각종 안전장치<br><small>자동 OFF,<br>과부하 방지 등</small></div>
+      <div class="benefit-item top-left">무선 원격조정<br><small>무선 리모컨으로<br>간편 작동</small></div>
+    </div>
+
   
     <!--하단-->
     <footer>

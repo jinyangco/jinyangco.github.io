@@ -26,6 +26,11 @@ body {
   margin: 0 auto;
 }
 
+.benefit-container picture {
+  display: block;
+  width: 100%;
+}
+
 .background-image {
   width: 100%;
   height: auto;
@@ -62,4 +67,35 @@ body {
 .benefit-item.left         { top: 28%; left: 5%; } /* 각종 안전장치 */
 .benefit-item.top-left     { top: 5%; left: 37%; } /* 무선 원격조정 */
 
+@media (max-width: 768px) {
+  .benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+    aspect-ratio: auto;
+    padding: 20px 10px;
+    position: relative;
+  }
 
+  .background-image {
+    display: none; /* 배경 이미지 숨김 */
+  }
+
+  .benefit-item {
+    position: static;
+    width: 45%;
+    max-width: 200px;
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .benefit-item small {
+    font-size: 0.8rem;
+  }
+}
