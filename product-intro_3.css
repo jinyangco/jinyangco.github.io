@@ -23,7 +23,8 @@ body {
   width: 100%;
   max-width: 960px;
   aspect-ratio: 96 / 102;
-  margin: 0 auto;
+  margin: 150px auto;     /* 위아래 여백 추가 */
+  padding: 0 20px;        /* 좌우 여백 추가 */
 }
 
 .benefit-container picture {
@@ -58,44 +59,36 @@ body {
 }
 
 /* 좌표는 백분율 기준 (960x1020 기준) */
-.benefit-item.top          { top: 5%; left: 63%; } /* 강력한 흡입력 */
-.benefit-item.top-right    { top: 28%; left: 95%; } /* 조용한 청소 */
-.benefit-item.right        { top: 52%; left: 95%; } /* 경제성 */
-.benefit-item.bottom-right { top: 80%; left: 65%; } /* 간단하고 편리한 청소 */
-.benefit-item.bottom       { top: 80%; left: 37%; } /* 깨끗하고 쾌적한 실내유지 */
-.benefit-item.bottom-left  { top: 52%; left: 5%; } /* 다양한 청소도구배치 */
-.benefit-item.left         { top: 28%; left: 5%; } /* 각종 안전장치 */
-.benefit-item.top-left     { top: 5%; left: 37%; } /* 무선 원격조정 */
+.benefit-item.top          { top: 2%; left: 68%; } /* 강력한 흡입력 */
+.benefit-item.top-right    { top: 32%; left: 99%; } /* 조용한 청소 */
+.benefit-item.right        { top: 63%; left: 98%; } /* 경제성 */
+.benefit-item.bottom-right { top: 93%; left: 68%; } /* 간단하고 편리한 청소 */
+.benefit-item.bottom       { top: 93%; left: 35%; } /* 깨끗하고 쾌적한 실내유지 */
+.benefit-item.bottom-left  { top: 63%; left: 3%; } /* 다양한 청소도구배치 */
+.benefit-item.left         { top: 32%; left: 5%; } /* 각종 안전장치 */
+.benefit-item.top-left     { top: 2%; left: 35%; } /* 무선 원격조정 */
 
 @media (max-width: 768px) {
   .benefit-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: stretch;
+    display: block;
+    padding: 0 16px;
+    text-align: center;
     aspect-ratio: auto;
-    padding: 20px 10px;
-    position: relative;
   }
 
   .background-image {
-    display: none; /* 배경 이미지 숨김 */
+    display: none;
   }
 
   .benefit-item {
-    position: static;
-    width: 45%;
-    max-width: 200px;
-    background: #f9f9f9;
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    font-size: 0.9rem;
-    line-height: 1.5;
+    display: none;
   }
 
-  .benefit-item small {
-    font-size: 0.8rem;
+  .benefit-container picture img {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 }

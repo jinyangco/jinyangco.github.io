@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 29.6.1, SVG Export Plug-In . SVG Version: 9.03 Build 0)  -->
 <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 3394.72 2716.6" style="enable-background:new 0 0 3394.72 2716.6;" xml:space="preserve">
+	 y="0px" viewBox="0 0 1350.68 1354.21" style="enable-background:new 0 0 1350.68 1354.21;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#EAE8E8;}
 	.st1{fill:#D9E8F3;}
 	.st2{fill:none;stroke:#B6CDDB;stroke-miterlimit:10;}
+	.st3{fill:none;}
 </style>
 <g>
 	<g>
-		<path class="st0" d="M1827.47,927.4l316.56,316.56v447.68l-316.56,316.56h-447.68l-316.56-316.56v-447.68l316.56-316.56H1827.47
-			 M1827.89,926.4h-448.51l-317.14,317.15v448.51l317.14,317.14h448.51l317.14-317.14v-448.51L1827.89,926.4L1827.89,926.4z"/>
+		<path class="st0" d="M925.63,137.76l316.56,316.56V902l-316.56,316.56H477.95L161.39,902V454.32l316.56-316.56L925.63,137.76
+			 M926.05,136.76H477.54L160.4,453.91v448.51l317.14,317.14h448.51l317.14-317.14V453.91L926.05,136.76L926.05,136.76z"/>
 	</g>
 </g>
 <g>
 	<g>
-		<path class="st0" d="M1781.34,1038.78l251.31,251.31v355.41l-251.31,251.31h-355.41l-251.31-251.31v-355.41l251.31-251.31H1781.34
-			 M1781.75,1037.78h-356.24l-251.9,251.9v356.24l251.9,251.9h356.24l251.9-251.9v-356.24L1781.75,1037.78L1781.75,1037.78z"/>
+		<path class="st0" d="M879.5,249.14l251.31,251.31v355.41L879.5,1107.17H524.09L272.78,855.86V500.45l251.31-251.31L879.5,249.14
+			 M879.91,248.14H523.67l-251.9,251.9v356.24l251.9,251.9h356.24l251.9-251.9V500.04L879.91,248.14L879.91,248.14z"/>
 	</g>
 </g>
-<polygon class="st1" points="1734.25,1152.45 1473.01,1152.45 1288.28,1337.18 1288.28,1598.42 1473.01,1783.15 1734.25,1783.15 
-	1918.98,1598.42 1918.98,1337.18 "/>
+<polygon class="st1" points="832.41,362.81 571.17,362.81 386.44,547.54 386.44,808.78 571.17,993.51 832.41,993.51 1017.14,808.78 
+	1017.14,547.54 "/>
 <g>
-	<line class="st2" x1="1379.38" y1="926.4" x2="1827.89" y2="2009.19"/>
+	<line class="st2" x1="477.54" y1="136.76" x2="926.05" y2="1219.55"/>
 </g>
-<line class="st2" x1="1827.89" y1="926.4" x2="1379.38" y2="2009.19"/>
-<line class="st2" x1="1062.24" y1="1250.42" x2="2145.03" y2="1685.17"/>
-<line class="st2" x1="1062.24" y1="1692.05" x2="2145.03" y2="1243.55"/>
-<circle class="st1" cx="1062.24" cy="1243.55" r="26.06"/>
-<circle class="st1" cx="2145.03" cy="1243.55" r="26.06"/>
-<circle class="st1" cx="1379.38" cy="926.4" r="26.06"/>
-<circle class="st1" cx="1827.89" cy="926.4" r="26.06"/>
-<circle class="st1" cx="1062.24" cy="1692.05" r="26.06"/>
-<circle class="st1" cx="2145.03" cy="1678.3" r="26.06"/>
-<circle class="st1" cx="1827.89" cy="2009.19" r="26.06"/>
-<circle class="st1" cx="1383.5" cy="2009.19" r="26.06"/>
-<image style="overflow:visible;enable-background:new    ;" width="622" height="763" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnAAAAOMCAYAAADNNI51AAAACXBIWXMAAA50AAAOdAFrJLPWAAAg
+<line class="st2" x1="926.05" y1="136.76" x2="477.54" y2="1219.55"/>
+<line class="st2" x1="160.4" y1="460.78" x2="1243.19" y2="895.53"/>
+<line class="st2" x1="160.4" y1="902.41" x2="1243.19" y2="453.91"/>
+<circle class="st1" cx="160.4" cy="453.91" r="26.06"/>
+<circle class="st1" cx="1243.19" cy="453.91" r="26.06"/>
+<circle class="st1" cx="477.54" cy="136.76" r="26.06"/>
+<circle class="st1" cx="926.05" cy="136.76" r="26.06"/>
+<circle class="st1" cx="160.4" cy="902.41" r="26.06"/>
+<circle class="st1" cx="1243.19" cy="888.66" r="26.06"/>
+<image style="overflow:visible;enable-background:new    ;" width="624" height="908" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnAAAAOMCAYAAADNNI51AAAACXBIWXMAAA50AAAOdAFrJLPWAAAg
 AElEQVR4nOy92ZMkSX4e9v3c48jKuqv6mJ57Zjk7tiAXJESAoEgCMtBoAklRkkkyk/SmF1GX6c/S
 q16oB0kGGs0oUEbQCGgpcFbcxe7MdE/P0XedmRmX+08PER7p6RURGZmVlZ3V7Z9NTWdGRrh7+Pn5
 73LAw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PD
@@ -3485,6 +3484,11 @@ I/z+iRN84MABnD1zBjMzGxDKCMvVCrbftJ1OnHgvuuvuu2vlUqkNAPPz88VTp8w8OPPJJ9i+fTvO
 nDlDnuc1Dx8+XAeASqWSP3bsWP6uu+5qlUolHwA+Pnky32w2cfttt7UBoN32vXfffSe/d+9ef3p6
 eiQ0jTDCCCOMMMIII4wwwggjjDDCCCOMMMIII4wwwggjjDDCCCOMMMIII4wwwggjjDDCCCOMMMII
 I4wwwggjjDDCCCOMMMIII4wwwggjjDDCCCOMMMIII4wwwggjjDDCCCOMMMIII4wwwggjjDDCCCOM
-MMI/Jfz/NzO9mydYRRwAAAAASUVORK5CYII=" transform="matrix(0.7684 0 0 0.9115 1364.641 1120.036)">
+MMI/Jfz/NzO9mydYRRwAAAAASUVORK5CYII=" transform="matrix(0.6457 0 0 0.7659 500.3178 330.3977)">
 </image>
+<g>
+	<rect x="812.63" y="-149.81" class="st3" width="15.32" height="9.19"/>
+</g>
+<circle class="st1" cx="477.52" cy="1218.56" r="26.06"/>
+<circle class="st1" cx="926.03" cy="1218.56" r="26.06"/>
 </svg>
