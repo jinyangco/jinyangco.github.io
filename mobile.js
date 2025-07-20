@@ -58,3 +58,11 @@ allMenuItems.forEach(item => {
     item.classList.add("active");
   });
 });
+
+// ✅ 화면 크기 변경 시 모바일 메뉴 강제 닫기
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 768) {
+    mobileMenu.classList.remove("active");
+    closeAllMenus();  // 기존 함수 그대로 사용
+  }
+});

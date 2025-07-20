@@ -40,7 +40,8 @@ a[href^="mailto"] {
 .mobile-menu {
   position: fixed;
   top: 0;
-  right: -280px;
+  right: 0;
+  transform: translateX(100%);
   width: 250px;
   height: 100%;
   background: rgba(255, 255, 255, 0.9);
@@ -48,12 +49,12 @@ a[href^="mailto"] {
   box-shadow: -8px 0 20px rgba(0, 0, 0, 0.15);
   z-index: 1000;
   padding: 80px 20px 40px;
-  transition: right 0.4s ease;
+  transition: transform 0.4s ease;
   border-radius: 12px 0 0 12px;
 }
 
 .mobile-menu.active {
-  right: 0;
+  transform: translateX(0);
 }
 
 /* 📚 메뉴 리스트 */
@@ -123,7 +124,7 @@ a[href^="mailto"] {
 /* 들여쓰기 없이 상위 항목은 기본 유지 (기호 유지) */
 .dropdown-content > li > .sub-dropdown-btn,
 .dropdown-content > li > a {
-  padding-left: 16px; /* 기본 */
+  padding-left: 16px;
   font-weight: 500;
 }
 
@@ -159,21 +160,6 @@ a[href^="mailto"] {
   font-weight: bold;
 }
 
-/* ✅ PC 네비게이션 애니메이션 */
-.nav-links li ul {
-  display: none;
-  flex-direction: column;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.3s ease;
-}
-
-.nav-links li:hover ul {
-  display: flex;
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* 📱 모바일 반응형 */
 @media (max-width: 768px) {
   .nav-links {
@@ -185,10 +171,6 @@ a[href^="mailto"] {
   }
 
   .mobile-menu:not(.active) {
-    display: none;
-  }
-
-  .mobile-menu.active {
     display: block;
   }
 
