@@ -85,4 +85,47 @@ document.addEventListener('DOMContentLoaded', () => {
       interval = setInterval(nextSlide, 4000);
     }
   }
+
+  // ✅ PC: 1단 드롭다운 클릭 열기/닫기
+  document.querySelectorAll('.nav-links > li > a').forEach(menu => {
+    menu.addEventListener('click', function (e) {
+      const dropdown = this.nextElementSibling;
+      if (dropdown && dropdown.classList.contains('dropdown')) {
+        e.preventDefault();
+
+        document.querySelectorAll('.dropdown').forEach(d => {
+          if (d !== dropdown) d.classList.remove('show');
+        });
+
+        dropdown.classList.toggle('show');
+      }
+    });
+  });
+
+  // ✅ PC: 2단 드롭다운 클릭 열기/닫기
+  document.querySelectorAll('.has-sub').forEach(menu => {
+    menu.addEventListener('click', function (e) {
+      const subDropdown = this.nextElementSibling;
+      if (subDropdown && subDropdown.classList.contains('sub-dropdown')) {
+        e.preventDefault();
+
+        document.querySelectorAll('.sub-dropdown').forEach(sd => {
+          if (sd !== subDropdown) sd.classList.remove('show');
+        });
+
+        subDropdown.classList.toggle('show');
+      }
+    });
+  });
+
+  // ✅ 바깥 클릭 시 PC 메뉴 닫기
+  document.addEventListener('click', function (e) {
+    const nav = document.querySelector('.nav-links');
+
+    // 메뉴 바깥을 클릭했을 때만 닫기
+    if (!nav.contains(e.target)) {
+      document.querySelectorAll('.dropdown').forEach(d => d.classList.remove('show'));
+      document.querySelectorAll('.sub-dropdown').forEach(sd => sd.classList.remove('show'));
+    }
+  });
 });
