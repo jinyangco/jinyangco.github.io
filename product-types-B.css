@@ -1,0 +1,110 @@
+.product-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 60px auto 80px; /* 🔥 상단 여백 추가 (60px) */
+  padding: 40px;
+  background: #fdfdfd;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.product-image {
+  flex-shrink: 0;
+  padding-top: 48px;
+}
+
+.product-image img {
+  width: 260px;
+  border-radius: 12px;
+  display: block;
+}
+
+.product-card img,
+.product-image img {
+  width: 280px;
+  height: 360px;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+}
+
+.product-content {
+  flex: 1;
+}
+
+.product-content h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 16px 0;
+  padding-left: 12px;
+  border-left: 5px solid #859FB1;
+  text-align: left;
+}
+
+/* 표 스타일 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead tr {
+  background: #f4f6f8;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: center;
+}
+
+td:nth-child(2) {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+td:nth-child(3) {
+  font-weight: 500;
+  color: #222;
+  text-align: right;
+}
+
+tbody tr {
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+/* 📱 반응형 - 모바일용 스타일 */
+@media (max-width: 768px) {
+  .product-card {
+    flex-direction: column;
+    padding: 30px 20px;
+    margin: 40px auto; /* 모바일에서 여백도 살짝 줄여서 자연스럽게 */
+  }
+
+  .product-image {
+    padding-top: 0;
+  }
+
+  .product-content h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

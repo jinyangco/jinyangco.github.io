@@ -1,14 +1,16 @@
+<!--제품소개 - 제품사용방법-->
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>오시는 길</title>
-  <link rel="stylesheet" href="base.css" />
-  <link rel="stylesheet" href="index.css" />
-  <link rel="stylesheet" href="mobile.css" />
-  <link rel="stylesheet" href="company.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>제품 사용방법</title>
+      <link rel="stylesheet" href="base.css" />
+      <link rel="stylesheet" href="base_product.css" />
+      <link rel="stylesheet" href="mobile.css" />
+      <link rel="stylesheet" href="product-intro_A-4.css" />
+  </head>
+  <body>
 
 <!-- ✅ 헤더 -->
 <header>
@@ -136,67 +138,88 @@
 </div>
 
 
-  <!-- 회사 이미지 -->
-  <section class="location-hero">
-    <img src="images/jinyangtech.jpeg" alt="회사 전경 사진" />
+    <!-- 파란 배경 제목 -->
+    <section class="blue-title">
+      <h1>제품소개</h1>
+      <p>중앙집중식 청소기의 원리, 구성, 사용, 장점을 한눈에</p>
+    </section>
+
+    <!-- 서브탭 메뉴 -->
+  <nav class="submenu">
+      <a href="product-intro_A-1.html" >중앙집중식 청소기</a>
+      <a href="product-intro_A-2.html">제품 구성도</a>
+      <a href="product-intro_A-3.html">제품 장점</a>
+      <a href="product-intro_A-4.html" class="active">제품 사용방법</a>
+    </nav>
+
+    <!-- 본문 -->
+  <section class="steps-section">
+    <h2 class="sub-title">편안한 단계별 사용</h2>
+    <p class="lead">차근차근, 꼼꼼하게 함께해요</p>
+ 
+    <div class="step">
+      <img src="images/step_1.svg" alt="step1">
+      <div class="step-text">
+        <h3>Step 1 <span class="bar">|</span>청소도구의 결합</h3>
+        <p>호스와 손잡이를 연결하고,<br>손잡이에 지능 리모트컨트롤을 결합합니다.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/step_2.svg" alt="step2">
+      <div class="step-text">
+        <h3>Step 2 <span class="bar">|</span>진공흡입구에 연결</h3>
+        <p>- 결합된 호스 끝부분을 진공흡입구에 삽입합니다.<br>
+           - 일부 모듈은 흡입구 조절홈과 호스 꽂음홈을 맞추어 결합해야 합니다.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/step_3.svg" alt="step3">
+      <div class="step-text">
+        <h3>Step 3 <span class="bar">|</span>청소기 가동</h3>
+        <p>손잡이에 있는 스위치 누르면 청소기를<br>가동시킵니다.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/step_4.svg" alt="step4">
+      <div class="step-text">
+        <h3>Step 4 <span class="bar">|</span>청소시작</h3>
+        <p>각 용도에 맞는 청소도구를 선택하여<br>적합한 흡입력 조절 버튼을 사용하여 청소를 시작합니다.<br>
+           1단 : 섬세한 작업, 방사 커텐링<br>
+           2단 : 보통으로 오염된 카페트 청소, 소파 등<br>
+           3단 : 딱딱한 바닥 및 심하게 오염된 카페트</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/step_5.svg" alt="step5">
+      <div class="step-text">
+        <h3>Step 5 <span class="bar">|</span>청소완료</h3>
+        <p>청소를 마치면 손잡이에 있는<br>정비 버튼을 눌러 청소기 작동을 정지시킵니다.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <img src="images/step_6.svg" alt="step6">
+      <div class="step-text">
+        <h3>Step 6 <span class="bar">|</span>청소도구 보관</h3>
+        <p>청소를 마치고 호스와 청소도구를 분리하여<br>밴드식 호스걸이에 걸어 보관합니다.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- 주소 + 지도 -->
- <section class="location-wrapper">
-  <div class="location-info">
-    <h2>찾아오시는 길</h2>
 
-    <div class="info-item">
-      <img src="images/gps.svg" alt="주소 아이콘" />
-      <strong>주소</strong>
-      <p class="address">경북 칠곡군 기산면 영리1길 14</p>
-    </div>
+    <!--하단-->
+    <footer>
+      <img src="images/black_logo.svg" alt="JINYANGTECH 로고">
+      <div class="info">
+        <p>회사명 : 진양테크 | 주소 : 경북 칠곡군 기산면 영리1길 14</p>
+        <p>PHNOE : 010 - 2528 - 1625 | TEL : 054 - 977 - 1624</p>
+        <p>이메일: kdgk331@hanmail.net | FAX: 054-977-1622 | </p>
+      </div>
+    </footer>
 
-    <div class="info-item">
-      <img src="images/email.svg" alt="이메일 아이콘" />
-      <strong>E-Mail</strong>
-      <p class="address">kdgk331@hanmail.net</p>
-    </div>
-
-    <div class="info-item">
-      <img src="images/PHONE.svg" alt="휴대폰 아이콘" />
-      <strong>PHONE</strong>
-      <p class="address">010-2528-1625</p>
-    </div>
-
-    <div class="info-item">
-      <img src="images/TEL.svg" alt="전화 아이콘" />
-      <strong>TEL</strong>
-      <p class="address">054-977-1624</p>
-    </div>
-
-    <div class="info-item">
-      <img src="images/fax.svg" alt="팩스 아이콘" />
-      <strong>FAX</strong>
-      <p class="address">054-977-1622</p>
-    </div>
-  </div>
-
-  <div class="location-map">
-    <div id="daumRoughmapContainer1752652677289" class="root_daum_roughmap root_daum_roughmap_landing"></div>
-  </div>
-</section>
-
-
-
-
-  <!-- 푸터 -->
-  <footer>
-    <img src="images/black_logo.svg" alt="JINYANGTECH 로고" />
-    <div class="info">
-      <p>회사명 : 진양테크 | 주소 : 경북 칠곡군 기산면 영리1길 14</p>
-      <p>PHONE : 010-2528-1625 | TEL : 054-977-1624</p>
-      <p>이메일: kdgk331@hanmail.net | FAX: 054-977-1622</p>
-    </div>
-  </footer>
-  
-  <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
-  <script src="company.js"></script>
-  <script src="mobile.js"></script>
-</body>
+    <script src="mobile.js"></script>
 </html>
