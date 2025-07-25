@@ -55,12 +55,13 @@
   height: 200px;        /* 고정된 크기 */
   object-fit: contain;  /* 비율은 유지하며 안에서 축소 */
   transition: filter 0.3s ease;
+  margin-top:50px;
 }
 
 
 /* 텍스트 */
 .tool-item p {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   margin: 0;
 }

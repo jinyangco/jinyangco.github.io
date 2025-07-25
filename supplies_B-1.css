@@ -51,12 +51,24 @@
 
 /* 이미지 */
 .tool-item img {
-  width: 200px;         /* 고정된 크기 */
-  height: 200px;        /* 고정된 크기 */
+  width: 300px;
+  height: 300x;
   object-fit: contain;  /* 비율은 유지하며 안에서 축소 */
   transition: filter 0.3s ease;
+  margin-top: 80px;
 }
 
+.c-2_image {
+  margin-left:-50px;
+}
+
+.c-3_image {
+  margin-left:-80px;
+}
+
+.c-4_image {
+margin-right: -20px;
+}
 
 /* 텍스트 */
 .tool-item p {
