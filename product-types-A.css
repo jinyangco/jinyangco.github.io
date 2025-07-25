@@ -96,7 +96,7 @@ tbody tr:last-child {
   .product-card {
     flex-direction: column;
     padding: 30px 20px;
-    margin: 40px auto; /* 모바일에서 여백도 살짝 줄여서 자연스럽게 */
+    margin: 40px auto;
   }
 
   .product-image {
@@ -107,4 +107,16 @@ tbody tr:last-child {
     text-align: center;
     margin-top: 20px;
   }
+
+  /* ✅ 추가 */
+  table {
+    display: block;
+    overflow-x: auto;
+    margin: 0 auto; /* ✅ 가운데 정렬 */
+  }
+
+  thead, tbody, tr, td, th {
+    white-space: nowrap;
+  }
 }
+
