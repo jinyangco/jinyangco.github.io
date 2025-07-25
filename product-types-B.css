@@ -116,16 +116,39 @@ tbody tr:last-child {
 @media (max-width: 768px) {
   .product-card {
     flex-direction: column;
-    padding: 30px 20px;
-    margin: 40px auto; /* 모바일에서 여백도 살짝 줄여서 자연스럽게 */
+    align-items: stretch;      /* ✅ 너비 균등하게 */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .product-content {
+    width: 100%;
   }
 
   .product-image {
-    padding-top: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 
-  .product-content h2 {
-    text-align: center;
-    margin-top: 20px;
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
+  table {
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  thead, tbody, tr, td, th {
+    white-space: nowrap;
   }
 }
