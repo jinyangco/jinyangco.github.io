@@ -62,9 +62,9 @@ color: #444;
 
 
 .img-reason {
-  width: 500px;
+  max-width: 80%;
   height: auto;
-  margin: 0 auto;
+  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
