@@ -62,9 +62,10 @@ color: #444;
 
 
 .img-reason {
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
   transition: transform 0.3s ease;
 }
 
@@ -183,6 +184,9 @@ color: #444;
   .bacteria-icons img {
     width: 120px;     /* ✅ 크기 축소 */
     margin-right: 0;  /* ✅ 불필요한 간격 제거 */
+  }
+  .img-reason{
+    max-width: 95w;
   }
 }
 
