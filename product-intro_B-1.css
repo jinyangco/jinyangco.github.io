@@ -64,8 +64,9 @@ color: #444;
 .img-reason {
   max-width: 100%;
   height: auto;
-  display: block;
   margin: 0 auto;
+  display: block;
+  max-width: 800px;
   transition: transform 0.3s ease;
 }
 
@@ -186,7 +187,7 @@ color: #444;
     margin-right: 0;  /* ✅ 불필요한 간격 제거 */
   }
   .img-reason{
-    max-width: 95w;
+    max-width: 95vw;
   }
 }
 
