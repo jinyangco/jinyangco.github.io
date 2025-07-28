@@ -62,11 +62,9 @@ color: #444;
 
 
 .img-reason {
-  max-width: 100%;
+  width: 500px;
   height: auto;
   margin: 0 auto;
-  display: block;
-  max-width: 800px;
   transition: transform 0.3s ease;
 }
 
@@ -186,12 +184,20 @@ color: #444;
     width: 120px;     /* ✅ 크기 축소 */
     margin-right: 0;  /* ✅ 불필요한 간격 제거 */
   }
-  .img-reason {
-    width: 100vw;
-    max-width: none;
-    margin-left: calc(-1 * (100vw - 100%) / 2);
-    margin-right: calc(-1 * (100vw - 100%) / 2);
+    .img-diagram {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
     display: block;
+    margin: 0 auto;
+    }
+  .image {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .product-intro-section {
+    padding: 0 !important;
   }
 }
 
