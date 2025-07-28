@@ -186,8 +186,11 @@ color: #444;
     width: 120px;     /* ✅ 크기 축소 */
     margin-right: 0;  /* ✅ 불필요한 간격 제거 */
   }
-  .img-reason{
-    max-width: 95vw;
+  .img-reason {
+    width: 100vw;
+    max-width: none;
+    margin-left: -20px; /* 좌우 패딩 보정 (선택사항) */
+    margin-right: -20px;
   }
 }
 
