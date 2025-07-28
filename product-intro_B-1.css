@@ -189,8 +189,9 @@ color: #444;
   .img-reason {
     width: 100vw;
     max-width: none;
-    margin-left: -20px; /* 좌우 패딩 보정 (선택사항) */
-    margin-right: -20px;
+    margin-left: calc(-1 * (100vw - 100%) / 2);
+    margin-right: calc(-1 * (100vw - 100%) / 2);
+    display: block;
   }
 }
 
