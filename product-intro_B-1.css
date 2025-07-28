@@ -190,14 +190,18 @@ color: #444;
     height: auto !important;
     display: block;
     margin: 0 auto;
-    }
+    padding: 0 16px; /* ✅ 좌우 여백 직접 추가 */
+    box-sizing: border-box; /* ✅ 여백 포함 */
+  }
+
+  /* 원래대로 복구! */
+  .product-intro-section {
+    padding: 0 20px !important;
+  }
+
   .image {
     padding: 0 !important;
     margin: 0 !important;
-  }
-
-  .product-intro-section {
-    padding: 0 !important;
   }
 }
 
