@@ -1,71 +1,211 @@
-/* ✅ 기본 구조 */
 .product-intro-section {
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 20px;
-  text-align: center;  /* 전체 중앙 정렬 */
+  position: relative;
+  z-index: 1;
 }
 
-.product-intro-section h2 {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  font-weight: 600;
+.section {
+  margin-bottom: 150px;
+}
+
+.section:not(:first-of-type) {
+  margin-top: 80px;
+}
+
+.section-content {
+  text-align: left;
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  color: var(--main-color);
+  border-left: 6px solid var(--main-color);
+  padding-left: 14px;
+  margin-bottom: 20px;
   color: #222;
-  margin-bottom: 60px;
-  word-break: keep-all;
+  margin-top: 20px;
 }
 
-.product-intro-layout {
+.section p {
+  margin: 12px 0;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  padding-left : 14px;
+}
+
+.section h4 {
+text-align: center;
+color: #444;
+}
+
+.image {
+  text-align: center;
+  margin: 28px 0;
+}
+
+.img-diagram {
+  max-width: 45%;
+  height: auto;
+  margin-top: 20px;
+  transition: transform 0.4s ease;
+}
+.img-diagram:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.diagram img:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+
+.img-reason {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.img-reason:hover {
+  animation: shakeX 1s ease infinite;
+}
+
+@keyframes shakeX {
+  0%   { transform: translateX(5); }
+  25%  { transform: translateX(-5px); }
+  50%  { transform: translateX(5px); }
+  75%  { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+.bacteria-icons {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
 }
 
-.intro-image img {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 8px;
+.bacteria-icons img {
+  width: 180px;
+  height: auto;
+  transition: transform 0.4s ease;
+  margin-right: 60px;
 }
 
-.intro-description p {
-  font-size: 1.05rem;
-  color: #444;
-  line-height: 1.8;
-  margin-bottom: 20px;
-  text-align: left;
-  word-break: keep-all;
+.bacteria-icons img:hover {
+  transform: translateY(-8px) scale(1.05);
 }
 
-
-/* ✅ 반응형 대응 */
-@media (max-width: 768px) {
-  .product-intro-section {
-    padding: 0 16px;
+ .benefits-boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 36px;
   }
 
-  .product-intro-section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-  }
-
-  .product-intro-layout {
+  .benefits-boxes .box {
+    background: var(--box-bg);
+    color: var(--deep-text);
+    padding: 20px 14px;
+    border-radius: 16px;
+    flex: 1;
+    text-align: center;
+    font-size: 0.96rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    min-height: 160px;
   }
 
-  .intro-description p {
+  .benefits-boxes .box:hover {
+    background: #dce6ed;
+    transform: translateY(-3px);
+  }
+
+  .box .icon {
+    font-size: 3.2rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .box .title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #222;
+  }
+
+  .box .desc {
     font-size: 0.95rem;
-    line-height: 1.7;
+    color: #444;
+  }
+
+  .call-to-action {
+  border-left: 6px solid #7da3c3;
+  background-color:#eff6fb;
+  padding: 20px;
+  margin: 40px auto;
+  font-size: 1.0rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 1000px;
+  font-weight: bold;
+  text-align: center;
+  }
+
+@media (max-width: 1024px) {
+  .benefits-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits-boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .bacteria-icons {
+    flex-wrap: wrap; /* ✅ 줄바꿈 허용 */
+    gap: 20px;
+  }
+
+  .bacteria-icons img {
+    width: 120px;     /* ✅ 크기 축소 */
+    margin-right: 0;  /* ✅ 불필요한 간격 제거 */
   }
 }
 
 @media (max-width: 480px) {
-  .product-intro-section h2 {
-    font-size: 1.25rem;
-    line-height: 1.6;
+  .benefits-boxes {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .intro-description p {
-    font-size: 0.9rem;
+  .benefits-boxes .box {
+    font-size: 1.05rem;
+    padding: 20px 16px;
+    min-height: auto;
+  }
+
+  .box .title {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .box .desc {
+    font-size: 1rem;
+    line-height: 1.6;
   }
 }
+

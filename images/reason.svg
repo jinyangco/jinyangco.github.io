@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 702.69 344">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #a8683b;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: #323333;
+        font-family: MalgunGothicBold, 'Malgun Gothic';
+        font-size: 14px;
+      }
+
+      .cls-4 {
+        fill: #e94d58;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        fill: #77c9d4;
+      }
+
+      .cls-7 {
+        fill: #f7d76a;
+      }
+
+      .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-8 {
+        fill: #cae8ed;
+      }
+
+      .cls-9 {
+        fill: #ad6b3c;
+      }
+
+      .cls-10 {
+        letter-spacing: 0em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-13 {
+        fill: #444;
+        font-family: MalgunGothic-Semilight, 'Malgun Gothic';
+        font-size: 12px;
+        font-weight: 300;
+      }
+    </style>
+  </defs>
+  <g>
+    <g>
+      <rect class="cls-8" x="169" y="227" width="464" height="117" rx="12" ry="12"/>
+      <polygon class="cls-8" points="118.02 242.76 220.12 279.73 206.02 300.9 118.02 242.76"/>
+    </g>
+    <text class="cls-13" transform="translate(197.63 287.55)"><tspan x="0" y="0">식하우스 증후군으로 개인차가 있지만, 일반적으로 두통, 구역질, 눈과 목의 통증,</tspan><tspan x="0" y="17">가래, 가려움, 설사, 변비, 아토피성 피부염, 천식, 불안, 초조, 만성피로, 불면 등 </tspan><tspan x="0" y="34">건강장애가 나타나며, 매년 고통받는 사람들이 급증하고 있습니다.</tspan></text>
+    <text class="cls-3" transform="translate(195.72 266.65)"><tspan x="0" y="0">주요 증상</tspan></text>
+  </g>
+  <g>
+    <rect class="cls-8" x="70" width="487" height="135" rx="12" ry="12"/>
+    <polygon class="cls-8" points="111.26 185.4 140.24 99.48 174.88 118.53 111.26 185.4"/>
+  </g>
+  <g>
+    <circle class="cls-7" cx="54.5" cy="225.5" r="54.5"/>
+    <circle class="cls-9" cx="34.18" cy="212.89" r="7.64"/>
+    <circle class="cls-9" cx="73.05" cy="212.89" r="7.64"/>
+    <rect class="cls-2" x="66.51" y="237.7" width="26.5" height=".98" rx=".07" ry=".07" transform="translate(-145.06 126.17) rotate(-45)"/>
+    <rect class="cls-4" x="67.13" y="237.48" width="23.21" height="3.47" rx="1.74" ry="1.74" transform="translate(-146.09 125.74) rotate(-45)"/>
+    <path class="cls-1" d="M51.81,245.64c9.64-4.27,20.84-.06,25.03,9.42"/>
+  </g>
+  <g>
+    <rect class="cls-6" x="220.9" y="133" width="481.79" height="104" rx="12" ry="12"/>
+    <polygon class="cls-6" points="133.95 202.93 236.81 164.92 246.42 185.45 133.95 202.93"/>
+  </g>
+  <text class="cls-13" transform="translate(98.8 49.21)"><tspan x="0" y="0">실내의 건축자재나 가구, 생활용품에서 나오는 유해물질의 농도가 건강을 해칠</tspan><tspan x="0" y="17">정도로 높은 집을 말합니다.</tspan><tspan x="0" y="34">새 집의 경우 무늬목에서 발생되는 프롬알데히드, 마루판 접착제에서 발생되는</tspan><tspan x="0" y="51">유독물질 등 밀폐성성과 단열성이 높은 특정자재물의 화학물질이 다량으로 들어간</tspan><tspan x="0" y="68">건축자재로부터 휘발성 유기화합물(VOCs)이 발생합니다.</tspan></text>
+  <text class="cls-3" transform="translate(96.9 28.31)"><tspan x="0" y="0">Sick House </tspan><tspan class="cls-12" x="78.33" y="0">S</tspan><tspan class="cls-11" x="85.88" y="0">ynd</tspan><tspan class="cls-10" x="110.66" y="0">r</tspan><tspan class="cls-5" x="116.1" y="0">ome (새집증후군)</tspan></text>
+  <text class="cls-13" transform="translate(243.63 198.55)"><tspan x="0" y="0">학교 건물에서 발생되는 휘발성 유기화합물(VOCs)의 과다한 영향으로</tspan><tspan x="0" y="17">화학물질 과민증 환자가 발생할 수 있습니다.</tspan></text>
+  <text class="cls-3" transform="translate(240.72 170.65)"><tspan x="0" y="0">Sickk School </tspan><tspan class="cls-12" x="88.41" y="0">S</tspan><tspan class="cls-11" x="95.96" y="0">ynd</tspan><tspan class="cls-10" x="120.74" y="0">r</tspan><tspan class="cls-5" x="126.18" y="0">ome (학교증후군)</tspan></text>
+</svg>

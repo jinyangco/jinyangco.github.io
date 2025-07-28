@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_레이어_1" data-name="레이어 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.55 144.53">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #70b3d1;
+      }
+
+      .cls-2 {
+        letter-spacing: 2.67em;
+      }
+
+      .cls-3 {
+        fill: #d7eef9;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #444;
+        font-family: MalgunGothicBold, 'Malgun Gothic';
+        font-size: 14px;
+      }
+
+      .cls-6 {
+        fill: #231815;
+        font-family: AdobeMyungjoStd-Medium-KSCpc-EUC-H, 'Adobe Myungjo Std';
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .cls-7 {
+        letter-spacing: .67em;
+      }
+
+      .cls-8 {
+        letter-spacing: 1.67em;
+      }
+
+      .cls-9 {
+        fill: #212121;
+        font-family: HancomMalangMalang-Bold, 'Hancom MalangMalang';
+        font-size: 24px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(7.44 65.26)"><tspan x="0" y="0">포도상구균</tspan><tspan class="cls-7" x="60" y="0">	</tspan><tspan x="72" y="0">90%</tspan><tspan x="0" y="14.4">대장균</tspan><tspan class="cls-2" x="36" y="14.4">	</tspan><tspan x="72" y="14.4">98%</tspan><tspan x="0" y="28.8">곰팡이균</tspan><tspan class="cls-8" x="48" y="28.8">	</tspan><tspan x="72" y="28.8">90%</tspan></text>
+  <path class="cls-3" d="M61.28,0C27.43,0,0,27.43,0,61.28s27.43,61.28,61.28,61.28,61.28-27.43,61.28-61.28S95.12,0,61.28,0ZM61.28,97.57c-20.05,0-36.3-16.25-36.3-36.3S41.23,24.98,61.28,24.98s36.3,16.25,36.3,36.3-16.25,36.3-36.3,36.3Z"/>
+  <path class="cls-1" d="M61.28,61.28V0c33.62,0,61.28,27.66,61.28,61.28s-27.66,61.28-61.28,61.28S0,94.89,0,61.28C0,38.45,12.76,17.44,33.01,6.91l28.27,54.37Z"/>
+  <circle class="cls-4" cx="61.28" cy="61.28" r="36.3"/>
+  <text class="cls-9" transform="translate(37.15 71.7)"><tspan x="0" y="0">90%</tspan></text>
+  <text class="cls-5" transform="translate(37.15 141.09)"><tspan x="0" y="0">곰팡이균</tspan></text>
+</svg>
